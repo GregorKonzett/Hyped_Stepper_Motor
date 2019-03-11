@@ -34,5 +34,5 @@ void setup() {
 void loop() {
 
   //Hold stepper motor
-  digitalWrite(0);
+  digitalWrite(stepperPin,0);
 }
