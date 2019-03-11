@@ -4,9 +4,6 @@ int directionPin = 22;
 int stepperPin = 24;
 int activatePin = 23;
 
-bool step = false;
-float period = 0;
-
 void setup() {
 
   //Set pins to output
@@ -21,13 +18,7 @@ void setup() {
   digitalWrite(directionPin,LOW);
 
   //Needed to apply the direction before the first step is sent
-  delay(1000);
-  
-  //Period calculation based on rpm
-  int rpm = 30;
-  float frequency = rpm * STEPS / 60;
-  period = 1/frequency;
-    
+  delay(1000);    
 }
 
 
