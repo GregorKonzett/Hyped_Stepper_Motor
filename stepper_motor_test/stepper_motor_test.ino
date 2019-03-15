@@ -40,5 +40,5 @@ void loop() {
   step=!step;
 
   //Since step only happens when going from HIGH to LOW we have to divide the period by 2, since we have to do the digitalWrite part twice
-  delay(period/2);
+  delay((1000*period)/2);
 }
